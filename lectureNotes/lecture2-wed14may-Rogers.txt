@@ -1,0 +1,11 @@
+Lab 1
+
+Basic matlab stuff. Not a whole lot going on here.
+
+Important note: google matlab matrix indexing. It's not standard. Does linear indexing.
+
+Vectors are significantly more efficient than loops.
+
+Sometimes copy-pasta code will have bad apostrophes. Replace them with plain apostrophes to prevent errors.
+
+Don't do the prelab section, just the warmup

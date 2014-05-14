@@ -1,0 +1,41 @@
+Lab 01: Introduction to matlab
+------------------------------
+2.1
+	a)
+	jkl = 0 : 6;
+		generates a vector with values {0,1,2,3,4,5,6}
+	jkl = 2 : 4 : 17;
+		generates a vector with values {2, 6, 10, 14}
+	jkl = 99 : -1 : 88;
+		generates a vector with values {99, 98, 97, ..., 90, 89, 88}
+	ttt = 2 : (1/9) : 4
+		generates a vector with values {2, 2.11111, 2.22222, 2.33333, ..., 3.8889, 4.0000}
+	tpi = pi * [0 : 0.1 : 2]
+		generates a vector with values {0, 0.1, 0.2, ..., 1.9, 2.0}, and multiplies each of these by pi, producing {0, 0.3142, 0.6283, ..., 5.9690, 6.2832}
+
+	b)
+	xx(4:6)
+		echo xx elements in positions 4, 5, 6
+	size(xx)
+		echo return [row, col] diminsions of xx
+	length(xx)
+		echo return vector length, or largest array diminsion
+	xx(2:2:length(xx))
+		echo xx elements in positions {2, 4, 6, 8, 10, 12}
+
+	c)
+	xx(2:2:length(xx)) = pi^pi;
+
+2.2
+	a)
+	xk = cos( pi*(0:11)/4 )
+		vector {0, 1, 2, ..., 10, 11} is generated, then elementwise multiplied by pi/4.
+		the resulting vector is elementwise cosined.
+	xk(1) = 1;
+	xk(0) is not defined, because that's not how matlab indexes.
+
+	b)
+	yy = cos([-5:5]*pi/3)
+	the loop example needs k+6 because k starts at -5; matlab does not allow nonpositive array indexes.
+
+	
